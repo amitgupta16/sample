@@ -1,0 +1,43 @@
+body {
+  font-family: "consolas", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin:0px;  
+  background-color:#bbb;
+  text-align: center;
+  font-size: 35px;
+  padding-top: 10px;
+  text-shadow: 2px 2px 5px #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.flex-container {
+  display: flex;
+  flex-grow: inherit;
+  background-color: #bbb;
+}
+
+.flex-container > div {
+  border: 1px solid #333;
+  border-radius: 5px;
+  box-shadow: 2px 2px #333;
+  background-color: #eee;
+  padding: 20px;
+  margin: 10px;
+  flex: 50%;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction:column  
+  }
+}
